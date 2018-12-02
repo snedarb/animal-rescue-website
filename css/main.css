@@ -4,10 +4,11 @@ html {
 
 .masthead {
   background-color: #6359a6;
-  border-bottom: 5px solid #4d4583;
+  border-bottom: 10px solid #4d4583;
 }
 
 .logo {
+  padding: .5em;
   width: 200px;
   text-align: center;
 }
@@ -21,7 +22,7 @@ html {
 }
 
 .nav a {
-  font-family: 'Candal', sans-serif;
+  font-family: 'Oswald', sans-serif;
   display: block;
   padding: 0.5em;
   text-decoration: none;
@@ -33,12 +34,18 @@ html {
   color: #fff;
 }
 
-.nav-check:checked {
-  position: absolute;
+.nav-check:checked ~ .nav {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid #4d4583;
 }
 
-.nav-check:checked ~ .nav {
-  display: block;
+.nav-check:checked ~ .nav li {
+  width: 50%;
+}
+
+[type="checkbox"] + label::before {
+  display: none;
 }
 
 .nav-label {
@@ -46,9 +53,13 @@ html {
   display: inline-block;
   width: 50px;
   font-size: 1.25rem;
+  top: 1.5em;
+  position: absolute;
+  right: 5%;
 }
 
-.nav-label img {
+.nav-open,
+.nav-close {
   display: block;
   width: 100%;
 }
@@ -57,18 +68,50 @@ html {
   background-color: #6359a6;
 }
 
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.nav-close {
+  display: none;
+}
+
 .banner {
   background: url("../images/banner.jpg") no-repeat center center/ cover;
-  color: #6359a6;
+  font-weight: bold;
+  color: #fff;
   padding-top: 56.25%;
-  border-bottom: 4px solid #2d5a4d;
+  position: relative;
+  border-bottom: 10px solid #4d4583;
 }
 
 .banner-content {
-  background: url("../images/two-leaves.svg") no-repeat 10px top / 100px auto;
-  padding-top: 7.5em;
+  top: 0;
+  width: 85%;
+  padding-bottom: 5em;
+  margin-left: 10%;
 }
 
+.banner a {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  border: 3px solid #4d4583;
+  background-color: #6359a6;
+  margin-top: 2em;
+  width: 10em;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
 @media only screen and (min-width: 25em) {
 
   .banner-content {
