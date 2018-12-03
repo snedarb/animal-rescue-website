@@ -4,11 +4,13 @@ html {
 
 .masthead {
   background-color: #6359a6;
-  border-bottom: 10px solid #4d4583;
+  border-bottom: 8px solid #4d4583;
+  padding: 0;
 }
 
 .logo {
-  padding: .5em;
+  padding: 1em 0;
+  padding-left: 5%;
   width: 200px;
   text-align: center;
 }
@@ -23,8 +25,8 @@ html {
 
 .nav a {
   font-family: 'Oswald', sans-serif;
+  padding: 1em;
   display: block;
-  padding: 0.5em;
   text-decoration: none;
   color: #fff;
 }
@@ -53,7 +55,7 @@ html {
   display: inline-block;
   width: 50px;
   font-size: 1.25rem;
-  top: 1.5em;
+  top: 1em;
   position: absolute;
   right: 5%;
 }
@@ -84,16 +86,16 @@ html {
   background: url("../images/banner.jpg") no-repeat center center/ cover;
   font-weight: bold;
   color: #fff;
-  padding-top: 56.25%;
   position: relative;
-  border-bottom: 10px solid #4d4583;
+  border-bottom: 8px solid #4d4583;
 }
 
 .banner-content {
   top: 0;
   width: 85%;
   padding-bottom: 5em;
-  margin-left: 10%;
+  padding-left: 0;
+  margin-left: 5%;
 }
 
 .banner a {
@@ -101,7 +103,7 @@ html {
   text-decoration: none;
   color: #fff;
   border-radius: 8px;
-  border: 3px solid #4d4583;
+  border: 5px solid #4d4583;
   background-color: #6359a6;
   margin-top: 2em;
   width: 10em;
@@ -110,7 +112,7 @@ html {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  margin: 0;
+  margin-bottom: .5em;
 }
 @media only screen and (min-width: 25em) {
 
@@ -122,22 +124,28 @@ h1 {
 
 @media only screen and (min-width: 38em) {
 
-  .banner {
-    padding-top: 30.25%;
-  }
-
-  .banner-content {
-    padding-top: 3em;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
 
+  .banner-content {
+    max-width: 75%;
+  }
 
 }
 
 @media only screen and (min-width: 90em) {
 
+  .logo {
+    width: 250px;
+  }
 
+  .banner {
+    padding-top: 2%;
+  }
+
+  .banner-content {
+    max-width: 65%;
+    padding-bottom: 3em;
+  }
 }
