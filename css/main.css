@@ -9,9 +9,9 @@ html {
 }
 
 .logo {
-  padding: 1em 0;
+  padding: 1em 0 0.5em;
   padding-left: 5%;
-  width: 200px;
+  width: 175px;
   text-align: center;
 }
 
@@ -53,8 +53,8 @@ html {
 .nav-label {
   cursor: pointer;
   display: inline-block;
-  width: 50px;
-  top: 1.5em;
+  width: 40px;
+  top: 1.75em;
   position: absolute;
   right: 5%;
 }
@@ -124,6 +124,10 @@ h1 {
 }
 
 @media only screen and (min-width: 60em) {
+
+  .logo {
+    width: 200px;
+  }
 
   .nav a {
     padding: 0.5em;
