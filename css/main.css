@@ -1,15 +1,18 @@
 html {
-  font-family: "Bitter", serif;
+  font-family: Bitter, serif;
 }
 
 .masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #6359a6;
   border-bottom: 8px solid #4d4583;
   padding: 0;
 }
 
 .logo {
-  padding: 1em 0 0.5em;
+  padding: 1em 0 .5em;
   padding-left: 5%;
   width: 175px;
   text-align: center;
@@ -83,32 +86,65 @@ html {
 
 .banner {
   background: url("../images/banner.jpg") no-repeat center center/ cover;
+  padding-top: 10em;
   color: #fff;
   border-bottom: 8px solid #4d4583;
 }
 
 .banner-content {
-  top: 0;
   width: 85%;
   padding: 3em 0;
   margin-left: 5%;
 }
 
-.banner a {
+.btn {
   font-family: Oswald, sans-serif;
   text-decoration: none;
   color: #fff;
   border-radius: 8px;
-  border: 5px solid #4d4583;
-  background-color: #6359a6;
+  border: 5px solid #fff;
+  background-color: transparent;
   margin-top: 2em;
   width: 10em;
   text-align: center;
 }
 
+.btn:hover {
+  background-color: #6359a6;
+  border-color: #4d4583;
+}
+
 h1 {
   font-family: Oswald, sans-serif;
   margin-bottom: .5em;
+}
+
+.section {
+  margin-top: 1em;
+  width: 90%;
+  margin-left: 5%;
+  text-align: justify;
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #6359a6;
+  text-align: center;
+}
+
+.footer-nav a {
+  font-family: Oswald, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  border-top: 1px solid #4d4583;
+  padding: .25em 0;
+}
+
+.footer-nav a:hover {
+  background-color: #4d4583;
 }
 
 @media only screen and (min-width: 25em) {
@@ -130,7 +166,7 @@ h1 {
   }
 
   .nav a {
-    padding: 0.5em;
+    padding: .5em;
   }
 
   .nav {
@@ -149,12 +185,23 @@ h1 {
     max-width: 75%;
   }
 
+  .footer-nav {
+    position: relative;
+    bottom: 0;
+    display: inline-flex;
+    width: 100%;
+  }
+
+  .footer-nav a {
+    padding: 1em;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
 
   .nav a {
-    padding: 0.5em;
+    padding: .5em;
   }
 
   .nav {
@@ -178,8 +225,9 @@ h1 {
   }
 
   .banner-content {
+    margin-top: 6em;
     max-width: 65%;
-    padding-bottom: 3em;
+    padding-bottom: 5em 0 3em;
   }
 
 }
