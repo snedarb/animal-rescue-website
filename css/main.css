@@ -1,5 +1,5 @@
 html {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Bitter", serif;
 }
 
 .masthead {
@@ -24,7 +24,7 @@ html {
 }
 
 .nav a {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   padding: 1em;
   display: block;
   text-decoration: none;
@@ -54,8 +54,7 @@ html {
   cursor: pointer;
   display: inline-block;
   width: 50px;
-  font-size: 1.25rem;
-  top: 1em;
+  top: 1.5em;
   position: absolute;
   right: 5%;
 }
@@ -84,22 +83,19 @@ html {
 
 .banner {
   background: url("../images/banner.jpg") no-repeat center center/ cover;
-  font-weight: bold;
   color: #fff;
-  position: relative;
   border-bottom: 8px solid #4d4583;
 }
 
 .banner-content {
   top: 0;
   width: 85%;
-  padding-bottom: 5em;
-  padding-left: 0;
+  padding: 3em 0;
   margin-left: 5%;
 }
 
 .banner a {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   text-decoration: none;
   color: #fff;
   border-radius: 8px;
@@ -111,9 +107,10 @@ html {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: Oswald, sans-serif;
   margin-bottom: .5em;
 }
+
 @media only screen and (min-width: 25em) {
 
   .banner-content {
@@ -128,6 +125,22 @@ h1 {
 
 @media only screen and (min-width: 60em) {
 
+  .nav a {
+    padding: 0.5em;
+  }
+
+  .nav {
+    display: inline-flex;
+    position: absolute;
+    right: 5%;
+    top: 1.5em;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
+
   .banner-content {
     max-width: 75%;
   }
@@ -135,6 +148,22 @@ h1 {
 }
 
 @media only screen and (min-width: 90em) {
+
+  .nav a {
+    padding: 0.5em;
+  }
+
+  .nav {
+    display: inline-flex;
+    position: absolute;
+    right: 5%;
+    top: 1.5em;
+  }
+
+  .nav-open,
+  .nav-close {
+    display: none;
+  }
 
   .logo {
     width: 250px;
@@ -148,4 +177,5 @@ h1 {
     max-width: 65%;
     padding-bottom: 3em;
   }
+
 }
