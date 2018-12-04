@@ -14,11 +14,16 @@
 </head>
 <body>
 
-  <header class="masthead island-1-2">
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#main">Jump to main content</a></li>
+  </ul>
+
+  <header class="masthead island-1-2" role="banner">
     <div class="logo unit xs-1 s-1 m-1 l-1-4">
       <a href="index.html"><img src="images/phs-logo.svg" alt="logo"></a>
     </div>
-    <nav>
+    <nav role="navigation" id="nav">
       <input type="checkbox" class="nav-check" id="nav-check">
       <label class="nav-label" for="nav-check">
         <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
@@ -35,13 +40,18 @@
     </nav>
   </header>
 
-  <div class="banner">
-    <div class="banner-content wrapper pad-b gutter-1-2">
-      <h1 class="zetta">BRING HOME A WINNER</h1>
-      <p class="push-0 exa">Proin non lorem dui. Vestibulum elit metus, interdum at tortor et, viverra congue magna.</p>
-      <a class="block gutter pad-t-1-2 pad-b-1-2 milli" href="#">ADOPT</a>
+  <main role="main" id="main">
+    <div class="banner">
+      <div class="banner-content wrapper pad-b gutter-1-2">
+        <h1 class="zetta">BRING HOME A WINNER</h1>
+        <p class="push-0 exa">Proin non lorem dui. Vestibulum elit metus, interdum at tortor et, viverra congue magna.</p>
+        <a class="block gutter pad-t-1-2 pad-b-1-2 milli" href="#">ADOPT</a>
+      </div>
     </div>
-  </div>
+  </main>
+
+  <footer>
+  </footer>
 
 </body>
 </html>
