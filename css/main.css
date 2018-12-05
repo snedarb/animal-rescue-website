@@ -37,6 +37,7 @@ html {
 .nav a:hover {
   background-color: #4d4583;
   color: #fff;
+  border-radius: 5px;
 }
 
 .nav-check:checked ~ .nav {
@@ -83,6 +84,11 @@ html {
 .nav-close {
   display: none;
 }
+
+.nav-active {
+  background-color: #4d4583;
+}
+
 
 .banner {
   background: url("../images/banner.jpg") no-repeat center center/ cover;
@@ -166,7 +172,7 @@ h1 {
   }
 
   .nav a {
-    padding: .5em;
+    padding: .75em;
   }
 
   .nav {
@@ -179,6 +185,14 @@ h1 {
   .nav-open,
   .nav-close {
     display: none;
+  }
+
+  .nav-active {
+    background: url("../images/paw.svg") no-repeat .3em .4em / 45px;
+  }
+
+  .footer-active {
+    background:
   }
 
   .banner-content {
@@ -199,10 +213,6 @@ h1 {
 }
 
 @media only screen and (min-width: 90em) {
-
-  .nav a {
-    padding: .5em;
-  }
 
   .nav {
     display: inline-flex;
