@@ -1,5 +1,6 @@
 html {
   font-family: Bitter, serif;
+  color: #404040;
 }
 
 .masthead {
@@ -142,6 +143,10 @@ h2 {
   text-align: justify;
   position: relative;
   z-index: 1;
+}
+
+footer {
+  margin-top: 1.5rem;
 }
 
 .footer-nav {
